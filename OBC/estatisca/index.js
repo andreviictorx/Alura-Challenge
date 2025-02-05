@@ -40,7 +40,7 @@ const media = (...numbers) =>{
     const primeiroDoMeio = numerosOrdenados[numeroDoMeio-1]
     const segudoDoMeio = numerosOrdenados[numeroDoMeio]
 
-    return average(primeiroDoMeio, segudoDoMeio)
+    return average(primeiroDoMeio, segudoDoMeio);
 }
 
 console.log(media(2, 5, 99, 4, 42, 7)) // 2 4 5 7 42 99
