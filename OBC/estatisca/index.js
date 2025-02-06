@@ -45,3 +45,16 @@ const media = (...numbers) =>{
 
 console.log(media(2, 5, 99, 4, 42, 7)) // 2 4 5 7 42 99
 
+
+const mode = (...numbers)=>{
+    const quantidade = numbers.map(num =>[
+    num,
+    numbers.filter(n => n == num).length // quantidade de elementos repetidos
+    ])
+
+    quantidade.sort((a, b) => a[1]- b[1])
+    return quantidade[0][0]
+}
+
+
+console.log(`Moda: ${mode(1, 1, 99,99,99,99,99,99,99,99, 5, 4, 9, 7, 4, 3, 5, 2, 4, 0, 4)}`)
